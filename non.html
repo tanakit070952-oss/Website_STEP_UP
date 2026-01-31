@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ประวัติส่วนตัว</title>
+
+<style>
+body{
+  margin:0;
+  font-family:"Segoe UI", Tahoma, sans-serif;
+  background:linear-gradient(135deg,#dbeafe,#f0f9ff);
+}
+
+/* การ์ด */
+.card{
+  max-width:700px;
+  margin:50px auto;
+  background:#ffffff;
+  border-radius:22px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,123,255,0.25);
+  display:flex;
+  gap:25px;
+}
+
+/* รูป */
+.card img{
+  width:200px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* หัวข้อ */
+.card h1{
+  color:#2563eb;
+  margin:0 0 12px;
+}
+
+/* ข้อความ */
+.card p{
+  line-height:1.8;
+  color:#333;
+}
+
+/* ปุ่ม */
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 20px;
+  background:#3b82f6;
+  color:#fff;
+  border-radius:999px;
+  text-decoration:none;
+  transition:0.3s;
+}
+.btn:hover{
+  background:#2563eb;
+  transform:scale(1.05);
+}
+
+/* กลับ */
+.back{
+  display:block;
+  text-align:center;
+  margin-top:30px;
+  color:#2563eb;
+  text-decoration:none;
+  font-weight:bold;
+}
+body{
+  background:
+    radial-gradient(circle at 25% 30%, #bfdbfe 5px, transparent 6px),
+    radial-gradient(circle at 70% 60%, #ddd6fe 5px, transparent 6px),
+    linear-gradient(135deg,#f8fafc,#eef2ff);
+  background-size:140px 140px;
+}
+.card{
+  border-radius:26px;
+  box-shadow:0 20px 40px rgba(59,130,246,0.25);
+  position:relative;
+}.card::before{
+  content:"✨";
+  position:absolute;
+  top:-14px;
+  left:20px;
+  padding:4px 14px;
+  font-size:12px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#60a5fa,#818cf8);
+  color:white;
+}
+/* รูปเด้งนิด ๆ */
+.card img{
+  transition:0.4s;
+}
+.card{
+  animation:pop .5s ease;
+}
+
+@keyframes pop{
+  0%{ transform:scale(.8); opacity:0 }
+  100%{ transform:scale(1); opacity:1 }
+}
+
+.card img:hover{
+  transform:scale(1.05) rotate(-1deg);
+}
+/* ===== Fade ตอนโหลดหน้า ===== */
+.card{
+  animation:fadeUp 1.5s ease;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+
+/* ===== พื้นหลัง bubble ลอย ===== */
+body::before,
+body::after{
+  content:"";
+  position:fixed;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  filter:blur(120px);
+  z-index:-1;
+}
+
+body::before{
+  background:#ff9ecd;
+  top:-100px;
+  left:-100px;
+}
+
+body::after{
+  background:#a5b4fc;
+  bottom:-120px;
+  right:-120px;
+}
+
+
+/* ===== การ์ดใส glass เล็กน้อย ===== */
+.card{
+  background:rgba(255,255,255,0.85);
+  backdrop-filter:blur(6px);
+}
+
+
+/* ===== รูปเรืองแสง ===== */
+.card img{
+  box-shadow:0 0 0 transparent;
+}
+
+.card img:hover{
+  box-shadow:0 0 25px rgba(255,95,162,0.6);
+}
+
+
+/* ===== ปุ่มมีลูกศรเลื่อน ===== */
+.btn{
+  position:relative;
+  overflow:hidden;
+}
+
+.btn::after{
+  content:" →";
+  opacity:0;
+  transition:0.3s;
+}
+
+.btn:hover::after{
+  opacity:1;
+  margin-left:6px;
+}
+
+
+/* ===== ลิงก์กลับเด้งเบา ๆ ===== */
+.back{
+  transition:0.3s;
+}
+
+.back:hover{
+  transform:translateY(-3px);
+  color:#6366f1;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="images/non.jpg">
+
+  <div>
+    <h1>ประวัติส่วนตัว</h1>
+
+    <p>
+      <b>ชื่อ :</b> นายนาย อภินันท์ เเจ่มขำ (อานนท์) <br>
+      <b>วันเกิด :</b> 7 มิถุนายน 2553<br>
+      <b>แผนการเรียน :</b> วิทยาศาสตร์-คณิตศาสตร์-เทคโนโลยีการเกษตร
+    </p>
+
+    <a href="https://www.instagram.com/apinan567?hl=id" class="btn">Instagram</a>
+    <a href="https://www.facebook.com/search/top?q=apinan%20jamkham" class="btn">Facebook</a>
+  </div>
+</div>
+
+<a href="lota2.html" class="back">← กลับหน้าแรก</a>
+
+</body>
+</html>

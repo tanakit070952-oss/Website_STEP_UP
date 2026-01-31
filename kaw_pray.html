@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ประวัติส่วนตัว </title>
+
+<style>
+body{
+  margin:0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg,#ffd6e8,#fff0f6);
+}
+
+/* กล่องการ์ด */
+.card{
+  max-width:700px;
+  margin:50px auto;
+  background:#fff;
+  border-radius:24px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(255,105,180,0.25);
+  display:flex;
+  gap:25px;
+  align-items:flex-start;
+}
+/* ลอยนิด ๆ */
+.card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 25px 50px rgba(255,105,180,.35);
+}
+.card img{
+  border-radius:50%;
+  border:5px solid #ffb6d9;
+  box-shadow:0 0 20px #ffc0cb;
+  transition:.4s;
+}
+.card h1{
+  color:#ff4fa3;
+  font-weight:bold;
+}
+
+.card p{
+  color:#666;
+}
+.card img:hover{
+  transform:scale(1.1) rotate(5deg);
+}
+/* รูป */
+.card img{
+  width:200px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ข้อความ */
+.card h1{
+  color:#ff5fa2;
+  margin:0 0 10px;
+}
+
+.card p{
+  line-height:1.8;
+  color:#444;
+}
+
+/* ปุ่ม */
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 20px;
+  background:#ff8fab;
+  color:white;
+  border-radius:999px;
+  text-decoration:none;
+  transition:0.3s;
+}
+.btn:hover{
+  background:#ff5fa2;
+  transform:scale(1.05);
+}
+
+/* ลิงก์กลับ */
+.back{
+  display:block;
+  text-align:center;
+  margin-top:30px;
+  color:#ff5fa2;
+  text-decoration:none;
+  font-weight:bold;
+}
+/* รูปเด้งนิด ๆ */
+.card img{
+  transition:0.4s;
+}
+
+.card img:hover{
+  transform:scale(1.05) rotate(-1deg);
+}.card{
+  animation:pop .5s ease;
+}
+
+@keyframes pop{
+  0%{ transform:scale(.8); opacity:0 }
+  100%{ transform:scale(1); opacity:1 }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="images/kaw_pray.jpg">
+
+  <div>
+    <h1>ประวัติส่วนตัว 🌸</h1>
+
+    <p>
+      <b>ชื่อ :</b> นางสาว ปิยาพัชร เริญไธสง(ข้าวปลาย)<br>
+      <b>วันเกิด :</b> 9 มิถุนายน 2552  <br>
+      <b>แผนการเรียน :</b> วิทยาศาสตร์-คณิตศาสตร์ <br>
+    </p>
+
+    <a href="https://www.instagram.com/khaoplai.kub/" target="_blank" class="btn">
+      Instagram 💕
+    </a>
+    <a href="https://www.facebook.com/piyapat.roenthaisong.1" target="_blank" class="btn">
+      Facebook 💖
+    </a>
+  </div>
+</div>
+
+<a href="lota2.html" class="back">← กลับหน้าแรก</a>
+
+</body>
+</html>

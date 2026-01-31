@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ประวัติส่วนตัว</title>
+
+<style>
+body{
+  margin:0;
+  font-family:"Segoe UI", Tahoma, sans-serif;
+  background:linear-gradient(135deg,#dbeafe,#f0f9ff);
+}
+
+/* การ์ด */
+.card{
+  max-width:700px;
+  margin:50px auto;
+  background:#ffffff;
+  border-radius:22px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,123,255,0.25);
+  display:flex;
+  gap:25px;
+}
+
+/* รูป */
+.card img{
+  width:200px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* หัวข้อ */
+.card h1{
+  color:#2563eb;
+  margin:0 0 12px;
+}
+
+/* ข้อความ */
+.card p{
+  line-height:1.8;
+  color:#333;
+}
+
+/* ปุ่ม */
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 20px;
+  background:#3b82f6;
+  color:#fff;
+  border-radius:999px;
+  text-decoration:none;
+  transition:0.3s;
+}
+.btn:hover{
+  background:#2563eb;
+  transform:scale(1.05);
+}
+
+/* กลับ */
+.back{
+  display:block;
+  text-align:center;
+  margin-top:30px;
+  color:#2563eb;
+  text-decoration:none;
+  font-weight:bold;
+}
+.card{
+  position:relative;
+  overflow:hidden;
+}
+
+.card::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-120%;
+  width:60%;
+  height:100%;
+  background:linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+  transition:0.6s;
+}
+
+.card:hover::after{
+  left:120%;
+}
+.btn{
+  position:relative;
+  overflow:hidden;
+}
+
+.btn::after{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:-100%;
+  background:rgba(255,255,255,0.3);
+  transition:0.4s;
+}
+
+.btn:hover::after{
+  left:100%;
+}
+.card img{
+  transition:0.4s;
+}
+
+.card img:hover{
+  transform:rotate(-2deg) scale(1.05);
+}
+/* รูปเด้งนิด ๆ */
+.card img{
+  transition:0.4s;
+}
+
+.card img:hover{
+  transform:scale(1.05) rotate(-1deg);
+}
+/* ============================= */
+/* พื้นหลังไล่สีเคลื่อนไหว */
+/* ============================= */
+body{
+  background:linear-gradient(270deg,#ffd6e8,#fff0f6,#e0c3fc,#c2e9fb);
+  background-size:600% 600%;
+  animation:bgMove 12s ease infinite;
+}
+
+@keyframes bgMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+/* ============================= */
+/* การ์ด 3D ตามเมาส์ */
+/* ============================= */
+.card{
+  transform-style:preserve-3d;
+}
+
+.card:hover{
+  transform:rotateX(4deg) rotateY(-4deg) translateY(-10px);
+}
+
+
+/* ============================= */
+/* ปุ่ม ripple ตอนกด */
+/* ============================= */
+.btn{
+  position:relative;
+  overflow:hidden;
+}
+
+.btn:active::before{
+  content:"";
+  position:absolute;
+  width:200px;
+  height:200px;
+  background:rgba(255,255,255,0.5);
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  animation:ripple .6s ease;
+}
+
+@keyframes ripple{
+  to{
+    transform:translate(-50%,-50%) scale(2);
+    opacity:0;
+  }
+}
+
+
+/* ============================= */
+/* หัวข้อพิมพ์ทีละตัว */
+/* ============================= */
+.card h1{
+  overflow:hidden;
+  white-space:nowrap;
+  border-right:3px solid #ff5fa2;
+  width:0;
+  animation:typing 2s steps(20,end) forwards,
+            blink .7s infinite;
+}
+
+@keyframes typing{
+  to{ width:100% }
+}
+
+@keyframes blink{
+  50%{ border-color:transparent }
+}
+.card{
+  animation:pop .5s ease;
+}
+
+@keyframes pop{
+  0%{ transform:scale(.8); opacity:0 }
+  100%{ transform:scale(1); opacity:1 }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="images/kit.jpg">
+
+  <div>
+    <h1>ประวัติส่วนตัว</h1>
+
+    <p>
+      <b>ชื่อ :</b> นาย อัษฎา วิริยะเกริกไกรกุล (กิต) <br>
+      <b>วันเกิด :</b>  7 มิถุนายน 2553  <br>
+      <b>แผนการเรียน :</b>  วิทยาศาสตร์-คณิตศาสตร์-เทคโนโลยีการเกษตร 
+    </p>
+
+    <a href="https://www.instagram.com/atsada_kit/" class="btn">Instagram</a>
+    <a href="https://www.facebook.com/atsada.wriryakrerkkrikul" class="btn">Facebook</a>
+  </div>
+</div>
+
+<a href="lota2.html" class="back">← กลับ</a>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ประวัติส่วนตัว </title>
+
+<style>
+body{
+  margin:0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg,#ffd6e8,#fff0f6);
+}
+
+/* กล่องการ์ด */
+.card{
+  max-width:700px;
+  margin:50px auto;
+  background:#fff;
+  border-radius:24px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(255,105,180,0.25);
+  display:flex;
+  gap:25px;
+  align-items:flex-start;
+}
+
+/* รูป */
+.card img{
+  width:200px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ข้อความ */
+.card h1{
+  color:#ff5fa2;
+  margin:0 0 10px;
+}
+
+.card p{
+  line-height:1.8;
+  color:#444;
+}
+
+/* ปุ่ม */
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 20px;
+  background:#ff8fab;
+  color:white;
+  border-radius:999px;
+  text-decoration:none;
+  transition:0.3s;
+}
+.btn:hover{
+  background:#ff5fa2;
+  transform:scale(1.05);
+}
+
+/* ลิงก์กลับ */
+.back{
+  display:block;
+  text-align:center;
+  margin-top:30px;
+  color:#ff5fa2;
+  text-decoration:none;
+  font-weight:bold;
+}
+/* รูปเด้งนิด ๆ */
+.card img{
+  transition:0.4s;
+}
+body::after{
+  content:"💗 💕 💖 💘 💞";
+  position:fixed;
+  top:100%;
+  left:0;
+  font-size:25px;
+  opacity:.25;
+  animation:hearts 12s linear infinite;
+}
+
+@keyframes hearts{
+  from{transform:translateY(0)}
+  to{transform:translateY(-120vh)}
+}
+.card{
+  animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+}
+.btn{
+  background:linear-gradient(45deg,#ff9ecf,#ff6bb5);
+  color:white;
+  padding:12px 22px;
+  border-radius:50px;
+  text-decoration:none;
+  display:inline-block;
+  transition:.3s;
+  font-weight:bold;
+}
+
+.btn:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 15px #ff9ecf,0 0 30px #ff6bb5;
+}.card{
+  animation:pop .5s ease;
+}
+
+@keyframes pop{
+  0%{ transform:scale(.8); opacity:0 }
+  100%{ transform:scale(1); opacity:1 }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="images/cheetah.jpg">
+
+  <div>
+    <h1>ประวัติส่วนตัว 🌸</h1>
+
+    <p>
+      <b>ชื่อ :</b> นางสาว ณัฏฐณิชา พานิชกุล (ชีต้า)<br>
+      <b>วันเกิด :</b> 23 พฤษภาคม 2553  <br>
+      <b>แผนการเรียน :</b> วิทยาศาสตร์-คณิตศาสตร์ <br>
+    </p>
+
+    <a href="https://www.instagram.com/m5ayyy_23/" target="_blank" class="btn">
+      Instagram 💕
+    </a>
+    <a href="https://www.facebook.com/nattanicha.i.538537" target="_blank" class="btn">
+      Facebook 💖
+    </a>
+  </div>
+</div>
+
+<a href="lota2.html" class="back">← กลับหน้าแรก</a>
+
+</body>
+</html>

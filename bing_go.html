@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ประวัติส่วนตัว</title>
+
+<style>
+body{
+  margin:0;
+  font-family:"Segoe UI", Tahoma, sans-serif;
+  background:linear-gradient(135deg,#dbeafe,#f0f9ff);
+}
+
+/* การ์ด */
+.card{
+  max-width:700px;
+  margin:50px auto;
+  background:#ffffff;
+  border-radius:22px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,123,255,0.25);
+  display:flex;
+  gap:25px;
+}
+
+/* รูป */
+.card img{
+  width:200px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* หัวข้อ */
+.card h1{
+  color:#2563eb;
+  margin:0 0 12px;
+}
+
+/* ข้อความ */
+.card p{
+  line-height:1.8;
+  color:#333;
+}
+
+/* ปุ่ม */
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 20px;
+  background:#3b82f6;
+  color:#fff;
+  border-radius:999px;
+  text-decoration:none;
+  transition:0.3s;
+}
+.btn:hover{
+  background:#2563eb;
+  transform:scale(1.05);
+}
+
+/* กลับ */
+.back{
+  display:block;
+  text-align:center;
+  margin-top:30px;
+  color:#2563eb;
+  text-decoration:none;
+  font-weight:bold;
+}
+/* รูปเด้งนิด ๆ */
+.card img{
+  transition:0.4s;
+}
+
+.card img:hover{
+  transform:scale(1.05) rotate(-1deg);
+}
+body{
+  margin:0;
+  font-family:"Segoe UI",sans-serif;
+  background:linear-gradient(135deg,#0f172a,#1e293b,#0b1120);
+  color:white;
+}
+/* hover ยกขึ้น */
+.card:hover{
+  transform:translateY(-10px) scale(1.02);
+  box-shadow:0 30px 80px rgba(0, 138, 217, 0.8);
+}.card{
+  animation:pop .5s ease;
+}
+
+@keyframes pop{
+  0%{ transform:scale(.8); opacity:0 }
+  100%{ transform:scale(1); opacity:1 }
+}
+.card{
+  animation:pop .5s ease;
+}
+
+@keyframes pop{
+  0%{ transform:scale(.8); opacity:0 }
+  100%{ transform:scale(1); opacity:1 }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="images/bing_go.jpg">
+
+  <div>
+    <h1>ประวัติส่วนตัว</h1>
+
+    <p>
+      <b>ชื่อ :</b>  นาย ทรงพล รุประมาณ (บิงโก)  <br>
+      <b>วันเกิด :</b>    22 มิถุนายน 2552  <br>
+      <b>แผนการเรียน :</b>  ศิลป์-คํานวน 
+    </p>
+
+    <a href="https://www.instagram.com/bin_go.2009/" class="btn">Instagram</a>
+    <a href="https://www.facebook.com/mi.xa.ri.805158" class="btn">Facebook</a>
+  </div>
+</div>
+
+<a href="lota2.html" class="back">← กลับ</a>
+
+</body>
+</html>
