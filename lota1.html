@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<title>Step up Web</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* header */
+header {
+  background: #010d2c;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* เมนู */
+nav {
+  background: #222;
+  padding: 12px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #6fa8ff;
+}
+
+/* เส้นคาดสีกรม */
+.navy-bar {
+  width: 100%;
+  height: 15px;
+  background: #010d2c;
+  margin:6px 0;
+}
+
+/* เนื้อหา */
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ตาราง */
+table {
+  background: white;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* footer */
+footer {
+  background: #fdfdfd;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+body {
+  background: linear-gradient(270deg, #010d2c,  #010d2c);
+  background-size: 600% 600%;
+  animation: gradientMove 20s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 10%; }
+  100% { background-position: 0% 30%; }
+}
+nav{
+  position:relative;
+  overflow:hidden;
+}
+nav{
+  position:relative;
+  overflow:hidden;
+}
+nav::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:-100%;
+  width:100%;
+  height:2px;
+  background:linear-gradient(90deg,transparent,#38bdf8,transparent);
+  animation:navline 3s linear infinite;
+}
+@keyframes navline{
+  to{left:100%;}
+}
+.reveal{
+  opacity:0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+table{
+  transition: 0.4s ease;
+}
+
+table:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+video{
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+h2::after{
+  content:"";
+  display:block;
+  width:80px;
+  height:4px;
+  margin-top:8px;
+  background: linear-gradient(90deg,#38bdf8,#6fa8ff);
+  border-radius:10px;
+}
+a{
+  color:#1e40af;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+a:hover{
+  color:#38bdf8;
+  letter-spacing:0.5px;
+}
+.welcome-box{
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-8px);}
+  100%{transform:translateY(0);}
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<header class="reveal">
+<h1 id="type"></h1>
+
+<script>
+const text = "Welcome to STEP UP";
+let i = 0;
+setInterval(()=>{
+  if(i < text.length){
+    document.getElementById("type").innerHTML += text[i];
+    i++;
+  }
+},80);
+</script>
+
+</header>
+
+<nav class="reveal">
+  <a href="lota1.html"><span style="color: #ffffff;">หน้าแรก</span></a>
+  <a href="lota2.html"><span style="color: #ffffff;">เกี่ยวกับเรา</span></a>
+  <a href="lota3.html"><span style="color: #ffffff;">ติดตามข่าวสารจาก พรรค</span></a>  
+</nav>
+
+<div class="navy-bar reveal"></div>
+
+<div class="container reveal welcome-box">
+  <h2><span style="color: rgba(235, 234, 234, 0.992);">หน้าเเรก ของพวกเรา</span></h2>
+  <p> <span style="color: rgba(235, 234, 234, 0.992);">ยินดีต้อนรับเข้าสู่เว็บไซต์ของพรรค</span> <span style="color: yellow;">Step Up</span> </p>
+  <div class="line"></div>
+  <span class="tag"><span style="color: rgba(235, 234, 234, 0.992);">STEP UP • Student Council</span></span>
+</div>
+
+
+<table width="100%" cellpadding="20" class="reveal">
+  <tr>
+    <td width="40%" align="center">
+      <img src="images/Step.jpg" width="100%" style="border-radius:10px;">
+    </td>
+
+    <td width="60%" valign="top">
+      <h2>เกี่ยวกับ STEP UP</h2>
+      <h4>สภานักเรียน SK SC Student Council</h4>
+      <p>
+        STEP UP นักเรียนก้าวใหม่มันแปลว่าก้าวขึ้นมา เราจะก้าวขึ้นมาเพื่อพัฒนา ก้าวขึ้นมาเพื่อลอง ก้าวขึ้นมาเพื่อพิสูจน์ ก้าวขึ้นมาเพื่อทำทุกอย่างให้สำเร็จ
+      </p>
+      <br>
+      <p>
+        เราจะก้าวขึ้นมาเป็นผู้นำที่ดีของโรงเรียนเพื่อสร้างสรรค์สิ่งใหม่ๆ ก้าวขึ้นมาเพื่อเปลี่ยนเเปลงสิ่งที่ไม่ดีให้ดีขึ้น
+      </p>
+      <br>
+      <p>ช่องทางการติดตามข่าวสาร</p>
+      <a href="https://www.instagram.com/step_.up3/?hl=id" target="_blank">
+        instagram : STEP UP SK SC Student Council
+      </a>
+        <br><br><br>
+        <a href="https://www.tiktok.com/@sk.step.up03" target="_blank">
+          tiktok : @sk.step.up03
+        <br><br><br>
+        <a href="https://ngl.link/step_.up31" target="_blank">
+          ngl : @step_.up31
+      </a>
+    </td>
+  </tr>
+</table>
+
+<div style="
+  width:100%;
+  height:100px;
+  background:#FFFFFF;
+"></div>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if (top < window.innerHeight - 20) {
+      el.classList.add("show");
+    }
+  });
+});
+</script>
+<!-- เส้นคาดล่างสุด + ข้อความ -->
+<div style="
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:70px;
+  background:#FFFFFF;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+">
+  <span style="
+    color:#123b63;
+    font-weight:bold;
+    font-size:16px;
+  ">
+    STEP UP · Student Council
+  </span>
+</div>
+<table width="90%" align="center" cellpadding="30" bgcolor="#f9fbff">
+  <tr>
+    <td width="45%" align="center">
+      <video controls width="100%">
+        <source src="images/intro.mp4" type="video/mp4">
+      </video>
+    </td>
+
+    <td width="55%">
+      <h2>🌟 สมาชิกพรรค STEP UP</h2>
+      <p>
+        สวัสดีค่ะ/ครับ เราคือพรรค STEP UP พวกเราคือนักเรียนที่มีความมุ่งมั่น ต้องการพัฒนาสิ่งต่างๆในโรงเรียนให้ดีขึ้น เพื่อสร้างสรรค์สิ่งใหม่ๆให้กับโรงเรียนของเรา
+      </p>
+      <p>
+        STEP UP พร้อมรับฟังทุกเสียงของนักเรียน และนำไปสู่การเปลี่ยนแปลงที่จับต้องได้ เพื่อให้โรงเรียนของเราเป็นสถานที่ที่ดีที่สุดสำหรับทุกคน
+      </p>
+    </td>
+  </tr>
+</table>
+<table width="90%" align="center" cellpadding="30" bgcolor="#f9fbff">
+  <tr>
+    <td width="45%" align="center">
+      <img src="images/Nayoby.png" width="100%" style="border-radius:10px;">
+    </td>
+
+    <td width="55%">
+      <h2>🌟 นโยบาย พรรค</h2>
+      <p>
+        เราคือนักเรียนที่กล้าคิด กล้าทำ<br>
+        และพร้อม STEP UP ไปด้วยกัน 🚀
+        <a href="https://www.instagram.com/p/DT25N0CD_Fr/?hl=id" target="_blank">
+          ดูนโยบายเพิ่มเติม
+      </p>
+    </td>
+  </tr>
+</table>
+
+<p align="center">💙──────────────💙</p>
+
+
+
+</body>
+</html>
